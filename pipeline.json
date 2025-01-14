@@ -1,0 +1,67 @@
+{
+    "configs": {
+        "max_inference_steps": 50,
+        "min_inference_steps": 10,
+        "max_cfg_scale": 10,
+        "min_cfg_scale": 1,
+        "max_width": 1024,
+        "min_width": 256,
+        "max_height": 1024,
+        "min_height": 256,
+        "max_prompt_length": 1000,
+        "max_negative_prompt_length": 1000
+    },
+
+    "Stable Diffusion 3.5 Large": {
+        "api_url": "https://yorionapi.onrender.com/sd_35_large",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-use-cache": "false"
+        },
+        "envHeaders": {
+            "Authorization": "Bearer os.environ.get('api_key')"
+        }
+    },
+
+    "Stable Diffusion 3.5 Realism Lora": {
+        "api_url": "https://yorionapi.onrender.com/sd_35_lora",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-use-cache": "false"
+        },
+        "envHeaders": {
+            "Authorization": "Bearer os.environ.get('api_key')"
+        }
+    },
+
+    "Flux Dev": {
+        "api_url": "https://yorionapi.onrender.com/flux_dev",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-use-cache": "false"
+        },
+        "envHeaders": {
+            "Authorization": "Bearer os.environ.get('api_key')"
+        }
+    },
+    "Flux Schnell": {
+        "api_url": "https://yorionapi.onrender.com/flux_schnell",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-use-cache": "false"
+        },
+        "envHeaders": {
+            "Authorization": "Bearer os.environ.get('api_key')"
+        }
+    },
+    "Flux Realism": {
+        "api_url": "https://yorionapi.onrender.com/flux_realism",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-use-cache": "false"
+        },
+        "envHeaders": {
+            "Authorization": "Bearer os.environ.get('api_key')"
+        }
+    }
+}
