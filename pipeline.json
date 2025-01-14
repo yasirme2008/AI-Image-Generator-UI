@@ -9,7 +9,8 @@
         "max_height": 1024,
         "min_height": 256,
         "max_prompt_length": 1000,
-        "max_negative_prompt_length": 1000
+        "max_negative_prompt_length": 1000,
+        "default_negative_prompt": "unrealistic,unrealistic hands,unrealistic feets,unrealistic legs, unrealistic fingers,deformed hands,deformed legs,deformed feets,mutated body,mutated hands,mutated fingers,mutated legs,deformed fingers."
     },
 
     "Stable Diffusion 3.5 Large": {

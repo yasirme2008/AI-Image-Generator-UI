@@ -20,6 +20,8 @@ class Inference:
             model = data['model']
             prompt = self.styles_dict[data['style']].replace("{prompt}", data['prompt'][:self.config['max_prompt_length']])
             negativePrompt = data['negativePrompt'][:self.config['max_negative_prompt_length']]
+            if(negativePrompt==''):
+                negativePrompt = self.config['default_negative_prompt']
             inferenceSteps = max(self.config['min_inference_steps'], min(data['inferenceSteps'], self.config['max_inference_steps']))
             cfgScale = max(self.config['min_cfg_scale'], min(data['cfgScale'], self.config['max_cfg_scale']))
             width = max(self.config['min_width'], min(data['width'], self.config['max_width']))
